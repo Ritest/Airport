@@ -130,18 +130,12 @@ void main()
 	errorcode = graphresult();
 	rectangle(10,150,635,300);
 	settextstyle(4, HORIZ_DIR, 4);
-	for(int i=0;i<3;i++)
-	{       for(int j=0;j<2;j++)
-		{	cprintf("Mumbai International Airport");
-			cprintf("\r\n");
-			textcolor(3);
-		}
-	}
 	outtextxy(120, 200,"Mumbai International Airport");
 	settextstyle(DEFAULT_FONT,HORIZ_DIR,1);
 	outtextxy(getmaxx()-450,getmaxy()-90,"Welcome.  Press any key to continue ...");
 	getch();
 	cleardevice();
+	closegraph();
 	passenger pass;
 	pass.enter();
 	pass.show();
